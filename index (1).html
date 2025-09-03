@@ -7,16 +7,16 @@
 </head>
 <body>
   <h1>Ürün Fiyatı</h1>
-  <div id="price" style="font-size: 24px; color: green;"></div>
+  <div id="price" style="font-size: 24px; color: green;">Yükleniyor...</div>
 
   <script>
     function updatePrice() {
-      const price = Math.floor(Math.random() * (500 - 100 + 1)) + 100; // 100-500 TL arası
+      const price = Math.floor(Math.random() * (500 - 100 + 1)) + 100; // 100-500 TL
       document.getElementById("price").innerText = price + " TL";
     }
 
-    updatePrice(); // Sayfa ilk açıldığında fiyat ata
-    setInterval(updatePrice, 5000); // Her 5 saniyede bir değiştir
+    updatePrice(); // Sayfa açıldığında fiyat ata
+    setInterval(updatePrice, 5000); // 5 saniyede bir değiştir
   </script>
 </body>
 </html>
